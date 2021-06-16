@@ -4,12 +4,20 @@
   "description": "Backend Assessment - Blog Posts ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "devStart": "nodemon server.js",
+    "test": "mocha"
   },
   "author": "Swani",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.0.0",
     "nodemon": "^2.0.7"
   }
 }
